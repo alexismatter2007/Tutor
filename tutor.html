@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Alexis Matter - Cours de Mathématiques</title>
+<meta charset="UTF-8">
+<meta name="description" content="Un site personnel élégant.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="tutor.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.row-padding img {margin-bottom: 12px}
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('Alexis.jpeg');
+  min-height: 100%;
+}
+</style>
+</head>
+<body>
+
+<!-- Sidebar with image -->
+<nav class="sidebar hide-medium hide-small" style="width:40%">
+  <div class="bgimg"></div>
+</nav>
+
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="sidebar black animate-right xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="button black xxxlarge display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="bar-block center">
+    <a href="#" class="bar-item button text-grey hover-black" onclick="closeNav()">Accueil</a>
+    <a href="#about" class="bar-item button text-grey hover-black" onclick="closeNav()">À Propos</a>
+    <a href="#contact" class="bar-item button text-grey hover-black" onclick="closeNav()">Contact</a>
+  </div>
+</nav>
+
+<!-- Page Content -->
+<div class="main padding-large" style="margin-left:40%">
+
+  <!-- Menu icon to open sidebar -->
+  <span class="button top white xxlarge text-dark-grey hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+  <!-- Header -->
+  <header class="container center" style="padding:128px 16px" id="home">
+    <h1 class="jumbo text-dark-grey"><b>Alexis Matter</b></h1>
+    <p class="xlarge text-dark-grey">Etudiant à la Sorbonne</p>
+    <img src="Alexis2.jpeg" class="image hide-large hide-small round" style="display:block;width:60%;margin:auto;">
+    <img src="Alexis2.jpeg" class="image hide-large hide-medium round" width="1000" height="1333">
+  </header>
+
+  <!-- About Section -->
+  <div class="content justify text-dark-grey padding-32" id="about">
+    <h2>À Propos De Moi</h2>
+    <hr class="opacity">
+    <p class="large">Bonjour ! Je suis étudiant en licence de mathématiques et informatique à la Sorbonne à Paris. Je propose des cours de soutien pour collégiens et lycéens.
+    </p>
+    <p class="large">Premier cours gratuit. Contactez-moi par message pour plus d’infos.</p>
+    <h3 class="padding-16">Mon Expérience</h3>
+    <p class="large">- Étudiant en mathématiques et en informatique à la Sorbonne</p>
+    <p class="large">- 20/20 en mathématiques au baccalauréat</p>
+    <p class="large">- Français / Anglais</p>
+    
+    <!-- Grid for pricing tables -->
+    <h3 class="padding-16">Mes Tarifs</h3>
+    <div class="row-padding" style="margin:0 -16px">
+      <div class="half margin-bottom">
+        <ul class="ul center card hover-shadow">
+          <li class="dark-grey xlarge padding-32">Pour collégiens</li>
+          <li class="padding-16">
+            <h2>20 €</h2>
+            <span class="opacity">par heure</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="half">
+        <ul class="ul center card hover-shadow">
+          <li class="dark-grey xlarge padding-32">Pour lycéens</li>
+          <li class="padding-16">
+            <h2>25 €</h2>
+            <span class="opacity">par heure</span>
+          </li>
+        </ul>
+      </div>
+    </div>    
+  </div>
+
+  <!-- Contact Section -->
+  <div class="padding-32 content" id="contact" style="margin-bottom:64px">
+    <h2>Me Contacter</h2>
+    <hr class="opacity">
+
+    <div class="section">
+      <p class="text-grey"><i class="fa fa-map-marker fa-fw xxlarge margin-right"></i> Paris , FRANCE</p>
+      <p class="text-grey"><i class="fa fa-envelope fa-fw xxlarge margin-right"> </i> E-mail: alexismatter2007@gmail.com</p>
+    </div>
+  </div>  
+  
+  <!-- Footer -->
+  <footer class="container padding-24 light-grey center opacity xlarge" style="margin:-24px">
+    <a href="https://www.instagram.com/alexismatter2007/" target="_blank" class="hover-text-green">
+        <i class="fa fa-instagram hover-opacity"></i>
+    </a>
+    <a href="https://snapchat.com/t/8w4bkKbG" target="_blank" class="hover-text-green">
+        <i class="fa fa-snapchat hover-opacity"></i>
+    </a>
+    <!-- <a href="#" target="_blank" class="hover-text-green">
+        <i class="fa fa-linkedin hover-opacity"></i>
+    </a> -->
+    <p class="medium">Designed and built by <a href="https://github.com/alexismatter2007" target="_blank" class="hover-text-dark-grey">Alexis Matter</a></p>
+  </footer>
+  
+<!-- END PAGE CONTENT -->
+</div>
+
+<script>
+// Open and close sidebar
+function openNav() {
+  document.getElementById("mySidebar").style.width = "60%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
